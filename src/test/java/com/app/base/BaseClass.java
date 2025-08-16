@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class BaseClass {
+	
+	//testone 
 
 	public static WebDriver driver = null;
 
@@ -27,6 +29,16 @@ public class BaseClass {
 	}
 	
 	public static void selectbyValue_method(WebElement element,String data) {
+		try {
+		Select s = new Select(element);
+		s.selectByValue(data);
+		} catch (Exception e) {
+			throw new RuntimeException("Unable to Select the data");
+		}
+	}
+	
+	
+	public static void selectbyValue_methodone(WebElement element,String data) {
 		try {
 		Select s = new Select(element);
 		s.selectByValue(data);
