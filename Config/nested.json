@@ -1,0 +1,10 @@
+{
+	"employee": {
+		"name": "Yuvaraj",
+		"role": "principal software engineer",
+		"address": {
+			"city": "chennai",
+			"state": "tamilnadu"
+		}
+	}
+}
