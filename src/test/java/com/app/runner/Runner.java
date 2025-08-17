@@ -6,8 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features ="C:\\Users\\HP\\eclipse-workspace\\Develop\\new\\new\\oct"
-		+ "\\API_2025_July\\src\\test\\java\\com\\app\\feature",
+@CucumberOptions(features ="src/test/java/com/app/feature",
 		glue = "com.app.stepdefinition",
 		dryRun = false,
 		tags = "@asMap",
@@ -20,7 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 			        "pretty",
 			        "html:target/cucumber-reports.html",
 			        "json:target/cucumber.json",
-			        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"  // <- Important
+			    //    "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"  // <- Important
 			    })
 
 public class Runner {
